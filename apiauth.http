@@ -1,0 +1,17 @@
+@apiauth_HostAddress = http://localhost:5270
+
+GET {{apiauth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{apiauth_HostAddress}}/login
+Content-Type: application/json
+
+{
+    "Username": "igues",
+    "Password": "12345"
+}
+
+###
+GET {{apiauth_HostAddress}}/dados/teste
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaWd1ZXMiLCJleHAiOjE3MzU5MDkwODMsImlzcyI6ImlndWVzYXV0aC5jb20iLCJhdWQiOiJpZ3Vlc2F1dGguY29tIn0.kFrlUna16QlOE7lSbcKAwgx7u1cFq61jJ3gJJSMFZNY
