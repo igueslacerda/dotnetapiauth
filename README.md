@@ -1,2 +1,3 @@
 # dotnetapiauth
-Estudos sobre autenticação
+
+Estudos sobre autenticação com dotnet.
